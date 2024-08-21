@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/Logo.png" alt="Logo Alura">
+    </header>
+    <main>
+        <section class="seccion_uno">
+            <textarea class="caja_texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion" src="img/exclam.png"> Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button id="boton_encriptador" class="boton_encriptador">Encriptar</button>
+                <button id="boton_desencriptar" class="boton_desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="seccion_dos">
+            <textarea id="mensaje" class="mensaje ocultar-muneco" cols="30" rows="10" readonly></textarea>
+            <div class="mensaje-placeholder bold">Ningún mensaje fue encontrado</div>
+            <div class="mensaje-placeholder small">Ingresa el texto que desees encriptar o desencriptar</div>
+            <div class="boton_tres">
+                <button id="boton_copiar" class="boton_copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="creditos">
+            <h6 class="texto_creditos">Alura Challenge By Juan Pablo Muñoz</h6>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
